@@ -1,0 +1,297 @@
+/* ==========================================================================
+   1. RESET / BASE
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #232733;
+  background-color: #F5F6F8;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1C2431;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.6rem; margin-bottom: 1.25rem; }
+h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #B5791E;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #B5791E;
+  outline-offset: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fact-label {
+  font-weight: 600;
+  color: #1C2431;
+}
+
+/* Skip link: hidden until focused, helps keyboard users jump past the nav */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #1C2431;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Shared section spacing/width */
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section:nth-of-type(even) {
+  background-color: #FFFFFF;
+}
+
+
+/* ==========================================================================
+   2. HEADER + NAVIGATION (Flexbox)
+   ========================================================================== */
+
+.site-header {
+  background-color: #1C2431;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: #E7E4DC;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #D9A441;
+}
+
+
+/* ==========================================================================
+   3. ABOUT SECTION (Flexbox two-column layout)
+   ========================================================================== */
+
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.about-text {
+  flex: 2 1 320px;
+}
+
+.about-facts {
+  flex: 1 1 220px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  align-self: flex-start;
+}
+
+.about-facts h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-facts li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.about-facts li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   4. EDUCATION SECTION (vertical timeline)
+   ========================================================================== */
+
+.timeline-item {
+  border-left: 3px solid #D9A441;
+  padding-left: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-meta {
+  color: #5A5F6B;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+
+/* ==========================================================================
+   5. PROJECTS SECTION (CSS Grid)
+   ========================================================================== */
+
+.section-intro {
+  color: #5A5F6B;
+  margin-bottom: 1.75rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.project-link {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+
+/* ==========================================================================
+   6. CONTACT SECTION
+   ========================================================================== */
+
+.contact-list li {
+  margin-bottom: 0.6rem;
+}
+
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+
+.site-footer {
+  background-color: #1C2431;
+  color: #B7BAC4;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
+
+
+/* ==========================================================================
+   8. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Tablet: below 768px — projects grid goes from 3 columns to 2 */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-facts {
+    flex-basis: 100%;
+  }
+
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.4rem; }
+}
+
+/* Mobile: below 480px — nav stacks, projects grid becomes 1 column */
+@media (max-width: 480px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav ul {
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 2rem 1.25rem;
+  }
+}
