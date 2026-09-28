@@ -1,0 +1,144 @@
+.site-header {
+  background-color: #1C2431;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #E7E4DC;
+  text-decoration: none;
+}
+
+.site-header nav a:hover {
+  color: #D9A441;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.section-note {
+  color: #5A5F6B;
+  margin-bottom: 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  border-radius: 4px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-tag {
+  align-self: flex-start;
+  background-color: #F0EAD9;
+  color: #7A5A17;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-primary {
+  background-color: #1C2431;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #2c3650;
+}
+
+.btn-secondary {
+  background-color: #D9A441;
+  color: #1C2431;
+}
+
+.practice-form {
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 480px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.5rem;
+  border: 1px solid #C7CAD1;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-confirmation {
+  background-color: #EAF3EC;
+  color: #24522F;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #1C2431;
+  color: #B7BAC4;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
