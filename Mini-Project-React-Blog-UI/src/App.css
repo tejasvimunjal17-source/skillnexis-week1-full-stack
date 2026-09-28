@@ -1,0 +1,132 @@
+/* ===== Header (Flexbox) ===== */
+.site-header {
+  background-color: #1C2431;
+  padding: 1.25rem 1.5rem;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== Controls: search + category filter (Flexbox) ===== */
+.controls-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #C7CAD1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.category-button {
+  border: 1px solid #C7CAD1;
+  background-color: #FFFFFF;
+  color: #232733;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.category-button:hover {
+  border-color: #1C2431;
+}
+
+.category-button-active {
+  background-color: #1C2431;
+  color: #FFFFFF;
+  border-color: #1C2431;
+}
+
+/* ===== Posts grid (CSS Grid) ===== */
+.posts-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* desktop: 3 columns */
+  gap: 1.25rem;
+}
+
+.post-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  border-radius: 4px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.post-category {
+  align-self: flex-start;
+  background-color: #F0EAD9;
+  color: #7A5A17;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.post-meta {
+  color: #5A5F6B;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.empty-state {
+  text-align: center;
+  color: #5A5F6B;
+  padding: 2.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #1C2431;
+  color: #B7BAC4;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsive breakpoints ===== */
+
+/* Tablet: 3 columns -> 2 columns */
+@media (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 2 columns -> 1 column */
+@media (max-width: 480px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .controls-section {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+}
