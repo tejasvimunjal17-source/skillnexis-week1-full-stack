@@ -1,0 +1,20 @@
+{
+  "name": "react-blog-ui",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Skill Nexis Week 1 - Mini Project: React Blog UI (post cards from JSON, search, category filter)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
