@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Why Semantic HTML Matters",
+    "excerpt": "Tags like header, nav, and section describe meaning, not just appearance - and that helps accessibility and SEO.",
+    "category": "HTML & CSS",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-20"
+  },
+  {
+    "id": 2,
+    "title": "Flexbox vs Grid: When to Use Which",
+    "excerpt": "Flexbox is great for a single row or column. Grid is better when you need rows and columns together.",
+    "category": "HTML & CSS",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "Understanding let, const, and var",
+    "excerpt": "A quick look at scoping differences in JavaScript ES6+ and why const is usually the safest default.",
+    "category": "JavaScript",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-22"
+  },
+  {
+    "id": 4,
+    "title": "Arrow Functions Explained Simply",
+    "excerpt": "Arrow functions offer shorter syntax and handle the 'this' keyword differently from regular functions.",
+    "category": "JavaScript",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-23"
+  },
+  {
+    "id": 5,
+    "title": "Props vs State in React",
+    "excerpt": "Props are passed into a component from outside; state is data a component manages and can change itself.",
+    "category": "React",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-24"
+  },
+  {
+    "id": 6,
+    "title": "Building Reusable Components in React",
+    "excerpt": "How small, focused components like Button and Card can be reused across an entire application.",
+    "category": "React",
+    "author": "Tejasvi Munjal",
+    "date": "2026-09-25"
+  }
+]
