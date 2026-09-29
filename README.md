@@ -27,9 +27,9 @@ Each project lives in its own folder with its own `README.md` for setup details 
 
 | Project | Live Demo |
 |---|---|
-| Personal Portfolio | [View Live](PASTE_PORTFOLIO_VERCEL_URL_HERE) |
-| React Components Practice | [View Live](PASTE_REACT_COMPONENTS_VERCEL_URL_HERE) |
-| React Blog UI | [View Live](PASTE_REACT_BLOG_VERCEL_URL_HERE) |
+| Personal Portfolio | [View Live](https://skillnexis-week1-assignment.vercel.app/) |
+| React Components Practice | [View Live](https://skillnexis-week1-react-components.vercel.app/) |
+| React Blog UI | [View Live](https://skillnexis-week1-react-blog.vercel.app/) |
 
 ---
 
